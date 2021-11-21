@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import PropTypes from 'prop-types';
 import styles from './Form.module.css';
 
 const Form = (submitSearch) => {
@@ -27,4 +27,7 @@ const Form = (submitSearch) => {
     );
 };
 
+Form.propTypes = {
+    submitSearch: PropTypes.func.isRequired,
+};
 export default Form;
